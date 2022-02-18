@@ -1,0 +1,32 @@
+Soal 1 Membuat Database
+create database myshop;
+
+Soal 2 Membuat Table di Dalam Database
+Tabel users
+create table users(
+    -> id int(11) primary key auto_increment,
+    -> name varchar(255),
+    -> email varchar(255),
+    -> password varchar(255)
+    -> );
+
+Tabel categories
+create table categories(
+    -> id int(11) primary key auto_increment,
+    -> name varchar(255)
+    -> );
+
+Tabel items
+create table items(
+    -> id int(11) primary key auto_increment,
+    -> name varchar(255),
+    -> description varchar(255),
+    -> price int(20),
+    -> stock int(20),
+    -> category_id int(11),
+    -> foreign key(category_id) references categories(id)
+    -> );
+
+Soal 3 Memasukkan Data pada Table
+Soal 4 Mengambil Data dari Database
+Soal 5 Mengubah Data dari Database
